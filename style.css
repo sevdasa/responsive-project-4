@@ -62,7 +62,7 @@ html,body{
 	font-family: "Source Sans Pro", Helvetica, sans-serif;
 	font-size: 14pt;
     font-weight: 400;
-    line-height: 1.75;
+    line-height: 1.5;
     background: #f4f4f4;
 
 }
@@ -185,11 +185,14 @@ a{
     margin: 10% auto;
     border:solid 1px rgba(160, 160, 160, 0.3) ;
     /* height: 6em; */
+    height: auto;
+    padding: 1em .5em .5em 1em;
 }
 .main .row .col-8 .big-post .head{
     width: 100%;
     border-bottom: solid 1px rgba(160, 160, 160, 0.3) ;
-    margin-bottom: 10%;
+    margin-bottom: 15%;
+    padding: 1em .5em .5em 1em;
 
 }
 .main .row .col-8 .big-post .head .row{
@@ -198,7 +201,8 @@ a{
 /* col-8 -- head */
 .main .row .col-8 .big-post .head .row .col-9{
     float: left;
-    padding: 0.5em 0.5em 0.5em 1em;
+    padding: 1em .5em .5em 1em;
+    border-right: solid 1px rgba(160, 160, 160, 0.3) ;
 
 }
 .main .row .col-8 .big-post .head .row .col-9 h2{
@@ -206,7 +210,7 @@ a{
     letter-spacing: 0.22em;
     vertical-align: middle;
     font-size: 1.1em;
-    margin: 3%;
+    margin-bottom: 2%;
 }
 .main .row .col-8 .big-post .head .row .col-9 p{
     font-family: "Raleway", Helvetica, sans-serif;
@@ -221,7 +225,7 @@ a{
 /* col-4 */
 .main .row .col-8 .big-post .head .row .col-3{
     float: right;
-    border-left:solid 1px rgba(160, 160, 160, 0.3) ;
+    /* border-left:solid 1px rgba(160, 160, 160, 0.3) ; */
     padding: 0.5em 0 0.5em 1em;
 
 }
@@ -390,7 +394,7 @@ a{
 }
 .main .row .col-4 .aside .head-left{
     width: 70%;
-    margin: 15%  auto;
+    margin: 7%  auto;
     border-bottom: solid 1px rgba(160, 160, 160, 0.3);
 }
 .main .row .col-4 .aside .head-left .logo{
@@ -432,7 +436,7 @@ a{
 /* posts */
 .main .row .col-4 .aside .post{
     width: 70%;
-    margin: 5% auto;
+    margin: 2% auto;
     border-bottom: solid 1px rgba(160, 160, 160, 0.3);
 
 
@@ -440,12 +444,12 @@ a{
 .main .row .col-4 .aside .post .posts{
     width: 100%;
     margin-top: 5%;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
     border: solid 1px rgba(160, 160, 160, 0.3);
 
 }
 .main .row .col-4 .aside .post .posts:last-of-type{
-    margin-bottom: 16%;
+    margin-bottom: 8%;
 }
     
 
@@ -475,7 +479,7 @@ a{
     font-size: 0.7em;
     font-weight: 400;
     letter-spacing: 0.25em;
-    line-height: 2.5;
+    line-height: 2;
     margin-left: 10%;
 }
 .main .row .col-4 .aside .post .posts .captions img{
@@ -488,9 +492,9 @@ a{
 .main .row .col-4 .aside .items{
     border-bottom: solid 1px rgba(160, 160, 160, 0.3);
     width: 70%;
-    margin: 10% auto;
+    margin: 5% auto;
     position: relative;
-    height: 3em;
+    height: 1em;
     display: table;
     clear: both;
 }
@@ -506,7 +510,7 @@ a{
     letter-spacing: 0.25em;
     color: #3c3b3b;
     font-size: 0.8em;
-    padding: .5em 0.5em 0.5em 1em;
+    /* padding: .3em 0.3em 0.3em 1em; */
     text-align: left;
     vertical-align: middle;
     font-weight: 900;
@@ -518,7 +522,7 @@ a{
     font-size: 0.7em;
     font-weight: 400;
     letter-spacing: 0.25em;
-    line-height: 2.5;
+    line-height: 2;
     /* margin-top: -1em; */
     text-transform: uppercase;
     color: #646464;  
@@ -526,7 +530,7 @@ a{
 .main .row .col-4 .aside .items .image{
     width: 30%;
     float: left;
-    margin: 4% auto;
+    margin: 3% auto;
 }
 .main .row .col-4 .aside .items .image img{
     width: 100%;
@@ -542,7 +546,7 @@ a{
 .main .row .col-4 .aside .about h2{
     color: #3c3b3b;
     font-size: 1em;
-    padding: .2em 0.5em 0.5em 1em;
+    padding: .2em 0.2em 0.2em .5em;
     text-align: left;
     vertical-align: middle;
 
@@ -551,7 +555,7 @@ a{
     text-align: justify;
     font-size: 0.7em;
     color: #646464;
-    margin-left: 5%;
+    margin-left: 3%;
 
 }
 .main .row .col-4 .aside .about .button{
@@ -686,6 +690,7 @@ a{
     }
     .main .row .col-8 .big-post .head{
         width: 100%;
+        padding: 0;
     }
     .main .row .col-8 .big-post .body .text   button{
         height: 3em;
@@ -694,18 +699,47 @@ a{
         font-size: 5px;
 
     }
+    .main .row .col-8 .big-post .head .row .col-9{
+        width: 100%;
+        border: none;
+    }
     .main .row .col-8 .big-post .head .row .col-9 p{
-        font-size: 11px;
+        font-size: 8px;
         white-space: normal;
         margin: 0;
+        padding: 0;
+        text-align: center;
+        
+
+    }
+    .main .row .col-8 .big-post .head .row .col-9 h2{
+        display: block;
+        text-align: center;
+    }
+    .main .row .col-8 .big-post .head .row .col-3{
+        width: 100%;
     }
     
     .main .row .col-8 .big-post .head .row .col-3 h3{
         font-size: 10px;
-        white-space: normal;
-        margin: 0;
-        padding: 0;
-        word-break: break-all;
+        margin-top: 4%;
+        padding: 2px;
+        text-align: center;
+    }
+    
+    .main .row .col-8 .big-post .head .row .col-3  a{
+        display: none;
+    }
+    .main .row .col-8 .big-post .head .row .col-3 img{
+        text-align: center;
+        display: block;
+        margin-top: 3%;
+        width: 10%;
+        height: 10%;
+        margin-right: 50%;
+        clear: both;
+
+
     }
     
     .main .row .col-8 .big-post .body .text  button{
