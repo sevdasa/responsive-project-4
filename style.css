@@ -1,0 +1,781 @@
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+/* style */
+html,body{
+    color: #646464;
+	font-family: "Source Sans Pro", Helvetica, sans-serif;
+	font-size: 14pt;
+    font-weight: 400;
+    line-height: 1.75;
+    background: #f4f4f4;
+
+}
+.header{
+    border-bottom: solid 1px rgba(160, 160, 160, 0.3);
+    background-color: #fff;
+}
+.header .row{
+    width: 100%;
+    display: table;
+}
+.header .row .col-3{
+    float: right;
+    margin-right: 0;
+    height: auto;
+}
+
+
+.header .row .col-2{
+    float: left;
+}
+.header .row .col-2 h1 {
+    float: left;
+    width: 100%;
+    white-space: nowrap;
+    font-size: .8em;
+    margin-left: 2%;
+    margin-top: 3%;
+    padding: 0 0 0 1.2em;
+    letter-spacing: .2em;
+    vertical-align: middle;
+
+}
+.header .row .col-3 .right{
+    float: right;
+    margin-right: 0;
+    margin-top: 0;
+    width: 100%;
+    
+}
+.header .row .col-3 .right ul{
+    width: 100%;
+}
+.header .row .col-3 .right li{
+    padding: 0 0 0 1em;
+    margin-right: 5%;
+    /* display: inline-block; */
+    float: right;
+}
+.header .row .col-3 .right li a{
+    margin-right: 5%;
+}
+.header .row .col-2 .left{
+    float: left;
+    width: 100%;
+
+}
+
+ul{
+    list-style-type: none;
+}
+li{
+    float: left;
+    border-left: solid 1px rgba(160, 160, 160, 0.3);
+    padding: 0 0 0 1em;
+    margin-left: 3%;
+    margin-top: 2%;
+    font-size: 0.7em;
+    font-weight: 400;
+    letter-spacing: 0.22em;
+
+
+}
+a{
+    text-decoration: none;
+    color: #646464;
+    margin-left: 3%;
+}
+/* navlist */
+.header .row .col-7{
+    text-align: center;
+    float: left;
+    
+}
+.header .row .col-7 .nav-list{
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    border-left: solid 1px rgba(160, 160, 160, 0.3);
+
+    
+}
+.header .row .col-7 .nav-list ul li:first-of-type{
+    border-left: 0;
+}
+.header .row .col-3 .right li a span{
+    display: inline-block;
+}
+/* media  query */
+
+/* main */
+.main{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    
+}
+.main .row{
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+.main .row .col-8{
+    float: right;
+    height: auto;
+}
+.main .row .col-8 .big-post{
+    width: 80%;
+    background-color: #fff;
+    margin: 10% auto;
+    border:solid 1px rgba(160, 160, 160, 0.3) ;
+    /* height: 6em; */
+}
+.main .row .col-8 .big-post .head{
+    width: 100%;
+    border-bottom: solid 1px rgba(160, 160, 160, 0.3) ;
+    margin-bottom: 10%;
+
+}
+.main .row .col-8 .big-post .head .row{
+    width: 100%;
+} 
+/* col-8 -- head */
+.main .row .col-8 .big-post .head .row .col-9{
+    float: left;
+    padding: 0.5em 0.5em 0.5em 1em;
+
+}
+.main .row .col-8 .big-post .head .row .col-9 h2{
+    text-transform: uppercase;
+    letter-spacing: 0.22em;
+    vertical-align: middle;
+    font-size: 1.1em;
+    margin: 3%;
+}
+.main .row .col-8 .big-post .head .row .col-9 p{
+    font-family: "Raleway", Helvetica, sans-serif;
+    font-size: 0.7em;
+    font-weight: 400;
+    letter-spacing: 0.25em;
+    line-height: 2.5;
+    margin-top: -1em;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+/* col-4 */
+.main .row .col-8 .big-post .head .row .col-3{
+    float: right;
+    border-left:solid 1px rgba(160, 160, 160, 0.3) ;
+    padding: 0.5em 0 0.5em 1em;
+
+}
+.main .row .col-8 .big-post .head .row .col-3 h3{
+    padding: 0.5em .5em .5em 1em;
+    font-size: 0.6em;
+    letter-spacing: 0.22em;
+    vertical-align: middle;
+    margin-left: 10%;
+    margin-top: 5%;
+
+}
+.main .row .col-8 .big-post .head .row .col-3 img{
+    float: right;
+    margin-right: 15%;
+    border-radius: 50%;
+    text-align: center;
+    margin-bottom: 5%;
+    margin-top:3% ;
+
+}
+.main .row .col-8 .big-post .head .row .col-3 a{
+    font-size: 0.7em;
+    font-weight: 400;
+    letter-spacing: 0.22em;
+    display: inline-block;
+    text-align: right;
+    margin-left: 10%;
+}
+/* body of the head */
+.main .row .col-8 .big-post .body{
+    width: 100%;
+    height: auto;
+
+}
+.main .row .col-8 .big-post .body .pic{
+    width: 80%;
+    margin: 0 auto;
+}
+.main .row .col-8 .big-post .body .pic img{
+    width: 100%;
+    display: block;
+    
+}
+.main .row .col-8 .big-post .body .text{
+    width: 80%;
+    margin: 2% auto;
+}
+.main .row .col-8 .big-post .body .text p{
+    margin: 0 0 2em 0;
+    font-size: 0.8em;
+    color: #646464;
+    text-align: justify;
+}
+/* .main .row .col-8 .big-post .body .text footer{
+    width: 80%;
+    margin: 0 auto;
+
+} */
+/* .main .row .col-8 .big-post .body .text  .button{
+    float: left;
+    width: 50%;
+} */
+.main .row .col-8 .big-post .body .text   button{
+    border:solid 1px rgba(160, 160, 160, 0.3);
+    color:#3c3b3b;
+    cursor: pointer;
+	display: inline-block;
+	font-family: "Raleway", Helvetica, sans-serif;
+    font-size: 0.6em;
+    font-weight: 800;
+	height: 4.8125em;
+	letter-spacing: 0.25em;
+	line-height: 4.8125em;
+	padding: 0 2.5em;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	white-space: nowrap;
+}
+.main .row .col-8 .big-post .body .text  .icons{
+    float: right;
+    margin-right: 2%;
+    font-size: .7em;
+    width: 50%;
+    vertical-align: baseline;
+
+
+
+
+}
+.main .row .col-8 .big-post .body .text footer .icons li{
+    float: right;
+    margin-left: 9%;
+    text-align: right;
+    font-size: 0.2em;
+    
+}
+.main .row .col-8 .big-post .body .text footer .icons li:first-of-type{
+    margin-left: 80%;
+}
+.main .row .col-8 .big-post .body .text footer .icons li a{
+    font-size: 0.2em;
+    float: right;
+
+
+}
+.main .row .col-8 .big-post .body .text footer .icons li .fa{
+    font-size: 0.2em;
+    text-align: right;
+    display: inline-block;
+    
+}
+/* end of col-8 */
+.main .row .col-8 .end-right{
+    width: 50%;
+    margin-left:6%;
+    float: left;
+    margin-bottom: 10%;
+}
+.main .row .col-8 .end-right .pagination{
+    width: 100%;
+    display: table;
+}
+.main .row .col-8 .end-right .pagination li{
+    float: left;
+    margin-left: 9%;
+    border: 0;
+    padding: 0 0 0 1em
+}
+.main .row .col-8 .end-right .pagination li .button{
+    border:solid 1px rgba(160, 160, 160, 0.3);
+    color:#3c3b3b;
+    cursor: pointer;
+	display: inline-block;
+	font-family: "Raleway", Helvetica, sans-serif;
+    font-size: 0.6em;
+    font-weight: 800;
+	height: 4.8125em;
+	letter-spacing: 0.25em;
+	line-height: 4.8125em;
+	padding: 0 2.5em;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+    white-space: nowrap;
+    vertical-align: top;
+}
+.main .row .col-8 .end-right .pagination li:first-of-type{
+    opacity: 0.5;
+}
+/* aside */
+.main .row .col-4{
+    float: left;
+    height: auto;
+    display: block;
+}
+/* head-left */
+.main .row .col-4 .aside{
+    width: 100%;
+
+}
+.main .row .col-4 .aside .head-left{
+    width: 70%;
+    margin: 15%  auto;
+    border-bottom: solid 1px rgba(160, 160, 160, 0.3);
+}
+.main .row .col-4 .aside .head-left .logo{
+    width: 100%;
+  overflow: hidden;
+}
+.main .row .col-4 .aside .head-left .logo img{
+    max-width: 100%;
+  clip-path: polygon( 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+
+}
+.main .row .col-4 .aside .head-left .title{
+    width: 100%;
+    margin-bottom: 10%;
+
+}
+.main .row .col-4 .aside .head-left .title h2{
+    color: #3c3b3b;
+    font-weight: 900;
+    font-size: 1.5em;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    margin: 0 0 1em 0;
+}
+.main .row .col-4 .aside .head-left .title p{
+    font-family: "Raleway", Helvetica, sans-serif;
+    font-size: 0.7em;
+    font-weight: 400;
+    letter-spacing: 0.25em;
+    line-height: 2.5;
+    /* margin-top: -1em; */
+    text-transform: uppercase;
+    color: #646464;
+}
+.main .row .col-4 .aside .head-left .title p a{
+    text-decoration-style: dotted;
+    text-decoration: #3c3b3b;
+}
+/* posts */
+.main .row .col-4 .aside .post{
+    width: 70%;
+    margin: 5% auto;
+    border-bottom: solid 1px rgba(160, 160, 160, 0.3);
+
+
+}
+.main .row .col-4 .aside .post .posts{
+    width: 100%;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    border: solid 1px rgba(160, 160, 160, 0.3);
+
+}
+.main .row .col-4 .aside .post .posts:last-of-type{
+    margin-bottom: 16%;
+}
+    
+
+.main .row .col-4 .aside .post .posts .image{
+    width: 100%;
+
+}
+.main .row .col-4 .aside .post .posts .image img{
+    width: 100%;
+    display: block;
+}
+.main .row .col-4 .aside .post .posts .captions{
+    width: 100%;
+
+
+}
+.main .row .col-4 .aside .post .posts .captions h3{
+    letter-spacing: 0.25em;
+    color: #3c3b3b;
+    font-size: 0.6em;
+    padding: 0.5em 0.5em 0.5em 1em;
+    
+}
+.main .row .col-4 .aside .post .posts .captions .time{
+    float: left;
+    color: #646464;
+    font-size: 0.7em;
+    font-weight: 400;
+    letter-spacing: 0.25em;
+    line-height: 2.5;
+    margin-left: 10%;
+}
+.main .row .col-4 .aside .post .posts .captions img{
+    border-radius: 50%;
+    text-align: right;
+    margin-right: 0;
+    margin-left: 30%;
+}
+/* listis */
+.main .row .col-4 .aside .items{
+    border-bottom: solid 1px rgba(160, 160, 160, 0.3);
+    width: 70%;
+    margin: 10% auto;
+    position: relative;
+    height: 3em;
+    display: table;
+    clear: both;
+}
+
+
+.main .row .col-4 .aside .items .text{
+    float: right;
+    width: 60%;
+    color: #646464;
+    
+}
+.main .row .col-4 .aside .items .text h3{
+    letter-spacing: 0.25em;
+    color: #3c3b3b;
+    font-size: 0.8em;
+    padding: .5em 0.5em 0.5em 1em;
+    text-align: left;
+    vertical-align: middle;
+    font-weight: 900;
+
+    
+}
+.main .row .col-4 .aside .items .text p{
+    font-family: "Raleway", Helvetica, sans-serif;
+    font-size: 0.7em;
+    font-weight: 400;
+    letter-spacing: 0.25em;
+    line-height: 2.5;
+    /* margin-top: -1em; */
+    text-transform: uppercase;
+    color: #646464;  
+}
+.main .row .col-4 .aside .items .image{
+    width: 30%;
+    float: left;
+    margin: 4% auto;
+}
+.main .row .col-4 .aside .items .image img{
+    width: 100%;
+    display: block;
+
+}
+/* about */
+.main .row .col-4 .aside .about{
+    width: 70%;
+    margin: 5% auto;
+    border-bottom: solid 1px rgba(160, 160, 160, 0.3);
+}
+.main .row .col-4 .aside .about h2{
+    color: #3c3b3b;
+    font-size: 1em;
+    padding: .2em 0.5em 0.5em 1em;
+    text-align: left;
+    vertical-align: middle;
+
+}
+.main .row .col-4 .aside .about p{
+    text-align: justify;
+    font-size: 0.7em;
+    color: #646464;
+    margin-left: 5%;
+
+}
+.main .row .col-4 .aside .about .button{
+    margin: 10%;
+    
+
+}
+.main .row .col-4 .aside .about .button button{
+    border:solid 1px rgba(160, 160, 160, 0.3);
+    color:#3c3b3b;
+    cursor: pointer;
+    background-color: inherit;
+	display: inline-block;
+	font-family: "Raleway", Helvetica, sans-serif;
+    font-size: 0.5em;
+    font-weight: 800;
+	height: 4.8125em;
+	letter-spacing: 0.25em;
+	line-height: 4.8125em;
+	padding: 0.5em 2.5em;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+    white-space: nowrap;
+    vertical-align: top;
+}
+/* footer */
+.main .row .col-4 .aside .footer{
+    width: 70%;
+    margin: 10% auto;
+
+}
+.main .row .col-4 .aside .footer .social{
+    width: 80%;
+    margin: 0 auto;
+    border: none;
+}
+.main .row .col-4 .aside .footer .social li{
+    float: left;
+    margin-left: 7%;
+    border: 0;
+}
+.main .row .col-4 .aside .footer .social li a{
+    text-decoration: none;
+    border: none;
+}
+.main .row .col-4 .aside .footer .social li a .fa::before{
+    color: rgba(160, 160, 160, 0.3);
+	margin-right: 0.75em;
+}
+.main .row .col-4 .aside .footer .social li a .fa{
+    color:  #fff;
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.075);
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    color: #aaaaaa;
+
+}
+
+.main .row .col-4 .aside .footer p{
+    text-align: justify;
+    font-size: 0.7em;
+    color: #646464;
+    margin-left: 5%;
+
+
+
+}
+.main .row .col-4 .aside .footer p a{
+    text-decoration: #646464 dotted;
+    margin: 0;
+}
+/* media query */
+@media(max-width:768px){
+    html, body , .header{
+        font-size: 11px;
+        margin: 0;
+        min-width: 320px;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .header .row{
+        min-width: 100%;
+        margin: 0;
+    }
+    .header .row .col-2 .left{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    .header .row .col-7 {
+        display: none;
+    }
+
+    .header .row .col-7 .nav-list{
+        display: none;
+        width: 0;
+        margin: 0;
+        padding: 0;
+    }
+    .header .row  .col-3 .right, .header .row .col-3 .right li{
+        display: none;
+        width: 0;
+
+    }
+    .header .row .col-2{
+        width: 100%;
+        display: block;
+        margin: 0;
+    }
+    /* big-post */
+    .main .row .col-8{
+        min-width: 100vw;
+        margin: 0;
+        padding: 0;
+        float: right;
+        
+    }
+    .main .row .col-8 .big-post{
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        float: right;
+        border-left: 0;
+        border-right: 0;
+    }
+    .main .row .col-8 .big-post .head{
+        width: 100%;
+    }
+    .main .row .col-8 .big-post .body .text   button{
+        height: 3em;
+        line-height: .4em;
+        margin: 0;
+        font-size: 5px;
+
+    }
+    .main .row .col-8 .big-post .head .row .col-9 p{
+        font-size: 11px;
+        white-space: normal;
+        margin: 0;
+    }
+    
+    .main .row .col-8 .big-post .head .row .col-3 h3{
+        font-size: 10px;
+        white-space: normal;
+        margin: 0;
+        padding: 0;
+        word-break: break-all;
+    }
+    
+    .main .row .col-4{
+        width: 100%;
+    }
+    .main .row .col-4 .aside .post .posts .captions img {
+        margin-right: 0;
+        margin-left: 75%;
+        margin-top: 0;
+    }
+    .main .row .col-4 .aside .post .posts .captions h3{
+        margin: 0;
+    }
+    .main .row .col-4 .aside .post .posts .captions .time{
+        vertical-align: middle;
+        display: inline-block;
+    }
+    .main .row .col-8 .end-right{
+        width: 100%;
+    }
+    .main .row .col-8 .end-right .pagination{
+        width: 100%;
+    }
+    .main .row .col-8 .end-right .pagination li{
+        width: 100%;
+    }
+    .main .row .col-8 .end-right .pagination li .button{
+        margin: 0;
+        display: block;
+        width: 80%;
+        padding: 0;
+    }
+    .main .row .col-4 .aside .head-left{
+        display: none;
+        width: 0;
+    }
+
+}
+@media(max-width:1024px) and (min-width:768px){
+    .main .row .col-4 .aside .post .posts{
+        width: 45%;
+        display: inline-block;
+        margin: 5% 2%;
+          
+    }
+    .main .row .col-8 .big-post .head .row .col-9 p{
+        font-size: 11px;
+        white-space: normal;
+        margin: 0;
+    }
+    
+    .main .row .col-8 .big-post .head .row .col-3 h3{
+        font-size: 10px;
+        white-space: normal;
+        margin: 0;
+        padding: 0;
+        word-break: break-all;
+    }
+    .main .row .col-4 .aside .post .posts{
+        width: 100%;
+    }
+    .main .row .col-8 .big-post .head .row .col-9 p{
+        font-size: 11px;
+        white-space: normal;
+        margin: 0;
+    }
+}
+    @media(max-width:1440px) and (min-width:1024px){
+        .main .row .col-8 .big-post .head .row .col-3 h3{
+            font-size: 10px;
+            white-space: normal;
+            margin: 0;
+            padding: 0;
+            word-break: break-all;
+        }
+        .main .row .col-8 .big-post .head .row .col-9 p{
+            font-size: 11px;
+            white-space: normal;
+            margin: 0;
+        }
+    }
