@@ -447,19 +447,19 @@ a{
 .main .row .col-4 .aside .post{
     width: 70%;
     margin: 2% auto;
-    border-bottom: solid 1px rgba(160, 160, 160, 0.3);
+    /* border-bottom: solid 1px rgba(160, 160, 160, 0.3); */
 
 
 }
 .main .row .col-4 .aside .post .posts{
     width: 100%;
     margin-top: 5%;
-    margin-bottom: 5%;
+    margin-bottom: 8%;
     border: solid 1px rgba(160, 160, 160, 0.3);
 
 }
 .main .row .col-4 .aside .post .posts:last-of-type{
-    margin-bottom: 8%;
+    margin-bottom: 9%;
 }
     
 
@@ -473,30 +473,50 @@ a{
 }
 .main .row .col-4 .aside .post .posts .captions{
     width: 100%;
+    margin-bottom: 9%;
+    height: 3em;
 
 
 }
-.main .row .col-4 .aside .post .posts .captions h3{
-    letter-spacing: 0.25em;
-    color: #3c3b3b;
-    font-size: 0.6em;
-    padding: 0.5em 0.5em 0.5em 1em;
-    
-}
-.main .row .col-4 .aside .post .posts .captions .time{
+/*  ch*/
+.main .row .col-4 .aside .post .posts .captions .text-section{
     float: left;
     color: #646464;
-    font-size: 0.7em;
+    font-size: 0.6em;
     font-weight: 400;
     letter-spacing: 0.25em;
     line-height: 2;
     margin-left: 10%;
+    width: 45%;
+    float: left;
+    margin-top: 3%;
+    margin-bottom: 3%;
 }
-.main .row .col-4 .aside .post .posts .captions img{
+/* ch */
+.main .row .col-4 .aside .post .posts .captions .text-section h3{
+    letter-spacing: 0.25em;
+    color: #3c3b3b;
+    font-size: 0.8em;
+    padding: 0.5em 0.5em 1em 1em;
+    
+}
+
+/* ch */
+
+.main .row .col-4 .aside .post .posts .captions .imge{
+    width: 40%;
+    float: right;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+.main .row .col-4 .aside .post .posts .captions .imge img{
     border-radius: 50%;
     text-align: right;
     margin-right: 0;
-    margin-left: 30%;
+    margin-left: 40%;
+    margin-top: 5%;
+    display: block;
+
 }
 /* listis */
 .main .row .col-4 .aside .items{
@@ -789,15 +809,18 @@ a{
     .main .row .col-4{
         width: 100%;
     }
-    .main .row .col-4 .aside .post .posts .captions img {
+    .main .row .col-4 .aside .post .posts .captions{
+        margin-top: 5%;
+    }
+    /* .main .row .col-4 .aside .post .posts .captions .imge img {
         margin-right: 0;
         margin-left: 75%;
         margin-top: 0;
-    }
-    .main .row .col-4 .aside .post .posts .captions h3{
+    } */
+    /* .main .row .col-4 .aside .post .posts .captions h3{
         margin: 0;
-    }
-    .main .row .col-4 .aside .post .posts .captions .time{
+    } */
+    .main .row .col-4 .aside .post .posts .captions .text-section{
         vertical-align: middle;
         display: inline-block;
     }
@@ -819,6 +842,15 @@ a{
     .main .row .col-4 .aside .head-left{
         display: none;
         width: 0;
+    }
+    .main .row .col-4 .aside .post .posts .captions .imge img{
+        border-radius: 50%;
+        text-align: right;
+        margin-right: 0;
+        margin-left: 40%;
+        margin-top: 5%;
+        display: block;
+    
     }
 
 }
@@ -850,10 +882,196 @@ a{
         white-space: normal;
         margin: 0;
     }
+    .main .row .col-4 .aside .post .posts{
+        width: 43%;
+        margin-top: 2%;
+    }
+    /*  */
+    html, body , .header{
+        font-size: 11px;
+        margin: 0;
+        min-width: 320px;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .header .row{
+        min-width: 100%;
+        margin: 0;
+    }
+    .header .row .col-2 .left{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    .header .row .col-2 h1 {
+        margin-bottom: 3%;
+        margin-top: 3%;
+        font-size: 13px;
+
+    }
+    .header .row .col-7 {
+        display: none;
+    }
+
+    .header .row .col-7 .nav-list{
+        display: none;
+        width: 0;
+        margin: 0;
+        padding: 0;
+    }
+    .header .row  .col-3 .right, .header .row .col-3 .right li{
+        display: none;
+        width: 0;
+
+    }
+    .header .row .col-2{
+        width: 100%;
+        display: block;
+        margin: 0;
+    }
+    /* big-post */
+    .main .row .col-8{
+        min-width: 100vw;
+        margin: 0;
+        padding: 0;
+        float: right;
+        
+    }
+    .main .row .col-8 .big-post{
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        float: right;
+        border-left: 0;
+        border-right: 0;
+    }
+    .main .row .col-8 .big-post .head{
+        width: 100%;
+        padding: 0;
+    }
+    .main .row .col-8 .big-post .body .text   button{
+        height: 3em;
+        line-height: .4em;
+        margin: 0;
+        font-size: 5px;
+
+    }
+    .main .row .col-8 .big-post .head .row .col-9{
+        width: 100%;
+        border: none;
+    }
+    .main .row .col-8 .big-post .head .row .col-9 p{
+        font-size: 8px;
+        white-space: normal;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        
+
+    }
+    .main .row .col-8 .big-post .head .row .col-9 h2{
+        display: block;
+        text-align: center;
+    }
+    .main .row .col-8 .big-post .head .row .col-3{
+        width: 100%;
+    }
+    
+    .main .row .col-8 .big-post .head .row .col-3 h3{
+        font-size: 10px;
+        margin-top: 4%;
+        padding: 2px;
+        text-align: center;
+    }
+    
+    .main .row .col-8 .big-post .head .row .col-3  a{
+        display: none;
+    }
+    .main .row .col-8 .big-post .head .row .col-3 img{
+        text-align: center;
+        display: block;
+        margin-top: 3%;
+        width: 10%;
+        height: 10%;
+        margin-right: 50%;
+        clear: both;
+
+
+    }
+    
+    .main .row .col-8 .big-post .body .text  button{
+        width: 100%;
+        display: block;
+        text-align: center;
+        
+    }
+    .main .row .col-8 .big-post .body .text  .icons{
+        width: 60%;
+        display: table;
+        height: auto;
+        /* clear: both; */
+        /* content: ' '; */
+        margin-bottom: 7%;
+        margin-left: 20%;
+
+    }
+    .main .row .col-8 .big-post .body .text  .icons li{
+        padding: .5em .5em .5em 1em;
+        height: 2px;
+        text-align: center;
+        font-size: 5px;
+        color: #646464;
+    } 
+    .main .row .col-4{
+        width: 100%;
+    }
+    .main .row .col-4 .aside .post .posts .captions{
+        margin-top: 5%;
+    }
+    /* .main .row .col-4 .aside .post .posts .captions .imge img {
+        margin-right: 0;
+        margin-left: 75%;
+        margin-top: 0;
+    } */
+    /* .main .row .col-4 .aside .post .posts .captions h3{
+        margin: 0;
+    } */
+    .main .row .col-4 .aside .post .posts .captions .text-section{
+        vertical-align: middle;
+        display: inline-block;
+    }
+    .main .row .col-8 .end-right{
+        width: 100%;
+    }
+    .main .row .col-8 .end-right .pagination{
+        width: 100%;
+    }
+    .main .row .col-8 .end-right .pagination li{
+        width: 100%;
+    }
+    .main .row .col-8 .end-right .pagination li .button{
+        margin: 0;
+        display: block;
+        width: 80%;
+        padding: 0;
+    }
+    .main .row .col-4 .aside .head-left{
+        display: none;
+        width: 0;
+    }
+    .main .row .col-4 .aside .post .posts .captions .imge img{
+        border-radius: 50%;
+        text-align: right;
+        margin-right: 0;
+        margin-left: 40%;
+        margin-top: 9%;
+        display: block;
+    
+    }
 }
     @media(max-width:1484px) and (min-width:1024px){
         .main .row .col-8 .big-post .head .row .col-3 h3{
-            font-size: 10px;
+            font-size: 13px;
             white-space: normal;
             margin: 0;
             padding: 0;
