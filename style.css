@@ -91,9 +91,10 @@ html,body{
     font-size: .8em;
     margin-left: 2%;
     margin-top: 3%;
-    padding: 0 0 0 1.2em;
+    padding: 0 0 0.3em 1.2em;
     letter-spacing: .2em;
     vertical-align: middle;
+    margin-top: 4%;
 
 }
 .header .row .col-3 .right{
@@ -114,6 +115,10 @@ html,body{
 }
 .header .row .col-3 .right li a{
     margin-right: 5%;
+    vertical-align: middle;
+    display: inline-block;
+    padding: 0 0 0.7em 1.4em;
+
 }
 .header .row .col-2 .left{
     float: left;
@@ -197,12 +202,15 @@ a{
 }
 .main .row .col-8 .big-post .head .row{
     width: 100%;
+    height: 100%;
+
 } 
 /* col-8 -- head */
 .main .row .col-8 .big-post .head .row .col-9{
     float: left;
     padding: 1em .5em .5em 1em;
     border-right: solid 1px rgba(160, 160, 160, 0.3) ;
+    /* height: 100%; */
 
 }
 .main .row .col-8 .big-post .head .row .col-9 h2{
@@ -396,6 +404,8 @@ a{
     width: 70%;
     margin: 7%  auto;
     border-bottom: solid 1px rgba(160, 160, 160, 0.3);
+    margin-top: 15%;
+
 }
 .main .row .col-4 .aside .head-left .logo{
     width: 100%;
@@ -652,6 +662,12 @@ a{
         padding: 0;
         margin: 0;
     }
+    .header .row .col-2 h1 {
+        margin-bottom: 3%;
+        margin-top: 3%;
+        font-size: 13px;
+
+    }
     .header .row .col-7 {
         display: none;
     }
@@ -810,7 +826,7 @@ a{
     .main .row .col-4 .aside .post .posts{
         width: 45%;
         display: inline-block;
-        margin: 5% 2%;
+        margin: 8% 2%;
           
     }
     .main .row .col-8 .big-post .head .row .col-9 p{
@@ -835,7 +851,7 @@ a{
         margin: 0;
     }
 }
-    @media(max-width:1440px) and (min-width:1024px){
+    @media(max-width:1484px) and (min-width:1024px){
         .main .row .col-8 .big-post .head .row .col-3 h3{
             font-size: 10px;
             white-space: normal;
@@ -847,5 +863,16 @@ a{
             font-size: 11px;
             white-space: normal;
             margin: 0;
+        }
+        .header .row .col-2 h1 {
+            font-size: 13px;
+            vertical-align: middle;
+            margin-top: 6%;
+        }
+        .main .row .col-8 .big-post .body .text{
+            height: 220px;
+        }
+        .main .row .col-8 .big-post .body .text .icons{
+            margin-top: 6%;
         }
     }
